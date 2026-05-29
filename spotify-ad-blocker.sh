@@ -1,4 +1,7 @@
 #!/bin/bash
+
+echo "Starting to patch this one out......."
+
 sudo bash -c 'cat >> /etc/hosts << EOF
 
 # === Spotify Ad Blocking (Merged with Burnt Sushi / SpotX lists) ===
@@ -49,6 +52,6 @@ sudo bash -c 'cat >> /etc/hosts << EOF
 0.0.0.0 www.omaze.com
 EOF'
 
-echo "Complete Spotify ad block installed. Reboot or restart Spotify."
+echo "Complete... --> Spotify ad domains blocked. --> Reboot PC for changes to take effect !!!"
 
-echo "Spotify ad domains blocked. Reboot or restart Spotify for changes to take effect."
+echo " (|--Happy Listening--|) "
