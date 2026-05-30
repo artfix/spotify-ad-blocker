@@ -1,6 +1,6 @@
-# Spotify Ad Blocker for Linux
+# Spotify Ad Blocker for Linux and macOS
 
-A simple, zero-resource Spotify ad blocker for Linux using `/etc/hosts` domain blocking. Run once, forget about ads.
+A simple, zero-resource Spotify ad blocker for Linux and macOS using `/etc/hosts` domain blocking. Run once, forget about ads.
 
 ## Features
 
@@ -34,6 +34,14 @@ The script adds a list of ad and tracking domains to `/etc/hosts`, redirecting t
     sudo reboot now
 
 That's it. No further steps required.
+
+## Install for MAC users (eperimental)
+
+Install for macOS is the same like for linux, git clone `spotify-ad-blocker-mac.sh` make it executable and run it.
+
+⚠️ One Important macOS-Specific Note
+
+System Integrity Protection (SIP): On modern Macs (macOS 10.15+), SIP protects /etc/hosts from being modified, but only in recovery mode. In normal operation, you can edit /etc/hosts with sudo – the script's sudo command will work fine. If you get a "Operation not permitted" error, that means SIP is blocking it, and you'd need to boot into Recovery Mode and run csrutil disable (not recommended unless you know what you're doing).
 
 ## What Gets Blocked
 
